@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon</title>
+    <style>
+        body {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+
+        .container {
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box1 {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-color: blue;
+            position: fixed;
+
+
+        }
+
+        .box2 {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: beige;
+            /* margin: auto; */
+            transform: translate(300px);
+            animation-name: moon;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            box-shadow: 0px 5px 10px 8px beige;
+
+
+
+
+        }
+
+        @keyframes moon {
+            0% {
+                transform: rotate(0deg) translate(300px);
+            }
+
+            100% {
+                transform: rotate(360deg) translate(300px);
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <box class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </box>
+</body>
+
+</html>
